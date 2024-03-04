@@ -30,7 +30,7 @@ app.post("/add", async (req, res) => {
     console.log(capt)
     if (!capt) return res.send("INVALID CAPTCHA");
 
-    const cap = await axios.post("https://www.google.com/recaptcha/api/siteverify", `secret=6LfVuk4pAAAAAI24DPD0PNtEUkJMqnyuRi_l_ryh&response=${capt}`)
+    const cap = await axios.post("https://www.google.com/recaptcha/api/siteverify", `secret=6Lc0YIkpAAAAALjaKYx4EcRDofjsub1zXYUpWz9v&response=${capt}`)
 
     console.log(cap.data)
 
